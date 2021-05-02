@@ -29,9 +29,9 @@ return response.json();
 }
 
 function showmvinfo(){
-    for (let prop in mainObj){
+    for (let prop in mvObj){
         
-        console.log(mainObj[prop]);
+        console.log(mvObj[prop]);
     }
 
     main.innerHTML="";
@@ -43,13 +43,13 @@ function showmvinfo(){
       <img src="${IMG_URL+mvObj.backdrop_path}" alt="imghor" id="backdrop">
       
     <div class="infobox">
-      <img src="poster.jpg" alt="img" id="poster">
+      <img src="${IMG_URL+mvObj.poster_path}" alt="img" id="poster">
       <div class="infotextbox">
         <h1> ${mvObj.title}</h1>
-        <span>date,2jonours,time</span> <br> <br>
-        <span>User Rating : 0.0 </span> <br> <br>
-        <span>OVERVEIW</span> <br> 
-        <span>Lorem ipsum, dolor sit  met consectetur adipisicing elit. Odit non ipsam impedit consectetur iusto repudiandae, praesentium nesciunt unde tempore, aliquid harum porro sapiente quos perferendis similique ducimus tempora ullam! Asperiores.</span>
+        <span>${mvObj.release_date} , ${mvObj.runtime}Min</span> <br> 
+        <span>User Rating : ${mvObj.vote_average} </span> <br> <br>
+        <h3>OVERVEIW</h3> 
+        <span>${mvObj.overview}</span>
         <br> <br> 
         <center>
         <button class="btndl"> <a href=""> <i class="fa fa-download"></i> Download 720p  </a></button>
@@ -61,6 +61,9 @@ function showmvinfo(){
     </div>
     
   </div> 
+
+
+
 
 
     `

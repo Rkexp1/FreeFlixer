@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dload.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Raleway:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     
-    
-
   </head>
 
 
@@ -22,7 +19,7 @@
 <span class="fas fa-bars"></span></div>
 <div class="logo">FreeFlixer.ml</div>
 <div class="nav-items">
-<li><a href="index.html">Home</a></li>
+<li><a href="#">Home</a></li>
 <li><a href="movies.html">Movies</a></li>
 <li><a href="series.html">Series</a></li>
 <li><a href="genres.html">Genres</a></li>
@@ -35,36 +32,23 @@
 
 <form method="GET" id="formSearch">
   <input type="text" placeholder="Search" id="search" class="search-data" required>
-  <button type="submit" name="submit" class="fas fa-search" onsubmit="searchAll()"></button>
+  <button type="submit" name="submit" class="fas fa-search"></button>
 </form>
     </nav>
 
-    <div class="container" onload="getmvinfo()">
-      <main id="main" style="display: flex;     flex-wrap: wrap;      justify-content : center;">
-      
-      
-      
-      
-      </main>       
-      </div>  
-      
-      <script src="scriptdl.js"></script>
 
 
-  </main>
-</div>
+
+<div class="container" onload="getmvinfo()">
+<main id="main" style="display: flex;     flex-wrap: wrap;      justify-content : center;">
 
 
 
 
+</main>       
+</div>  
 
-
-
-
-
-
-
-
+<script src="scriptdl.js"></script>
 
 
 <footer>
@@ -157,3 +141,18 @@
     cancelBtn.classList.add("show");
   }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

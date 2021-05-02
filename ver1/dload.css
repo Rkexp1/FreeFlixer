@@ -3,26 +3,27 @@
     }
     #main{
         margin: 0 ;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'poppins', sans-serif;
         font-weight: 400;
         color: black;
     }
-    @media screen and (min-width: 930px){
+    @media screen and (min-width: 1100px){
     
-    .inmainbox{
+.inmainbox{
         border: .1px solid black;
     
-    }
-    .bgbox{
+}
+.bgbox{
         color: whitesmoke;
         border: 1px solid black;
-    }
-    #backdrop{
+}
+#backdrop{
+        width: 1500px;
         max-width:90%;
         margin-left: 5%;
     }
     
-    .infobox {
+.infobox {
       position: absolute; /* Position the background text */
       top: 0; /* At the bottom. Use top:0 to append it to the top */
       margin-top: 71px;
@@ -32,28 +33,29 @@
       width: 89.7%; 
       max-height: 625px;
     }
-    #poster{
+#poster{
         width: 26%;
         margin: 50px;
+        margin-top: 85px;
         border-radius: 5px;
-       }
-    .infotextbox{
+ }
+.infotextbox{
         float: right;
         max-width:65% ;
         margin-right: 2%;
         margin-top: -40%;
-    }
+}
     
-    .infobox .btndl{
+.infobox .btndl{
         margin: 20px;
     }
-    .infobox a{
+.infobox a{
         font-family: 'poppins', sans-serif;
         color: white;
         text-decoration: none;
       
       }
-    }
+}
     
     
     
@@ -62,38 +64,35 @@
     
     
     
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1100px){
     
-        .inmain{
-            height: 100%;
-        
+        .inmainbox{
+        width: 90%;
+        margin-left: 5%;
         }
         .bg{
-            height: 100%;
+            height: opx;
         }
-        .bg img{
-            width: 0%;
-            height: 0%;
-        
+        #backdrop{
+                height: 0px;
         }
         
-        .info img{
+        #poster{
             float: left;
             border-radius: 5px;
-            height: 100%;
-            width: 100%;
+            height: 80%;
+            width: 90%;
         }
-        .infotext{
+        .infotextbox{
             color: black;
             margin-left: 1%;
         }
         
-        .info .btndl{
+        .infobox .btndl{
             margin: 10px;
         }
-        .info a{
+        .infobox a{
             color: white;
-            font-family: 'Raleway', sans-serif;
             text-decoration: none;
           
           }
