@@ -28,7 +28,7 @@ return response.json();
 //tryOne ends
 }
 
-function showmvinfo(data){
+function showmvinfo(){
     for (let prop in mainObj){
         
         console.log(mainObj[prop]);
@@ -36,11 +36,33 @@ function showmvinfo(data){
 
     main.innerHTML="";
     const movieEl = document.createElement('div');
-    movieEl.classList.add('inmain');
-    movieEl.innerHTML = ` <p>${mvObj.title}</p>
-    <img src="${IMG_URL+mvObj.poster_path}" alt="${mvObj.title}">
+    movieEl.classList.add('inmainbox');
+    movieEl.innerHTML = ` 
+
+    <div class="bgbox">
+      <img src="${IMG_URL+mvObj.backdrop_path}" alt="imghor" id="backdrop">
+      
+    <div class="infobox">
+      <img src="poster.jpg" alt="img" id="poster">
+      <div class="infotextbox">
+        <h1> ${mvObj.title}</h1>
+        <span>date,2jonours,time</span> <br> <br>
+        <span>User Rating : 0.0 </span> <br> <br>
+        <span>OVERVEIW</span> <br> 
+        <span>Lorem ipsum, dolor sit  met consectetur adipisicing elit. Odit non ipsam impedit consectetur iusto repudiandae, praesentium nesciunt unde tempore, aliquid harum porro sapiente quos perferendis similique ducimus tempora ullam! Asperiores.</span>
+        <br> <br> 
+        <center>
+        <button class="btndl"> <a href=""> <i class="fa fa-download"></i> Download 720p  </a></button>
+        <button class="btndl"> <a href=""> <i class="fa fa-download"></i> Download 1080p </a></button>
+        <button class="btndl"> <a href=""> <i class="fa fa-download"></i> Download <span style="font-size: 12px;color: whitesmoke;">from fastest server</span>  </a></button>   
+      </center>
+        
+      </div>
+    </div>
     
-    
+  </div> 
+
+
     `
         main.appendChild(movieEl);
   }
