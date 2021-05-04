@@ -1,2 +1,3 @@
 # FreeFlixer
-exp1 branch is the plece where i do tests to work if everything goes as expected then i'll merge it with main again.
+Free Flixer is a website which allows users to watch movies and webseries and many tv shows without any ads. Users can even download the content So that they can watch later.
+
