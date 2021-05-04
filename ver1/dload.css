@@ -1,0 +1,99 @@
+.container{
+        margin: 0;
+    }
+    #main{
+        margin: 0 ;
+        font-family: 'poppins', sans-serif;
+        font-weight: 400;
+        color: black;
+    }
+    @media screen and (min-width: 1100px){
+    
+.inmainbox{
+        border: .1px solid black;
+    
+}
+.bgbox{
+        color: whitesmoke;
+        border: 1px solid black;
+}
+#backdrop{
+        width: 1500px;
+        max-width:90%;
+        margin-left: 5%;
+    }
+    
+.infobox {
+      position: absolute; /* Position the background text */
+      top: 0; /* At the bottom. Use top:0 to append it to the top */
+      margin-top: 71px;
+      margin-left: 5%;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      width: 89.7%; 
+      max-height: 625px;
+    }
+#poster{
+        width: 26%;
+        margin: 50px;
+        margin-top: 85px;
+        border-radius: 5px;
+ }
+.infotextbox{
+        float: right;
+        max-width:65% ;
+        margin-right: 2%;
+        margin-top: -40%;
+}
+    
+.infobox .btndl{
+        margin: 20px;
+    }
+.infobox a{
+        font-family: 'poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+      
+      }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 1100px){
+    
+        .inmainbox{
+        width: 90%;
+        margin-left: 5%;
+        }
+        .bg{
+            height: opx;
+        }
+        #backdrop{
+                height: 0px;
+        }
+        
+        #poster{
+            float: left;
+            border-radius: 5px;
+            height: 80%;
+            width: 90%;
+        }
+        .infotextbox{
+            color: black;
+            margin-left: 1%;
+        }
+        
+        .infobox .btndl{
+            margin: 10px;
+        }
+        .infobox a{
+            color: white;
+            text-decoration: none;
+          
+          }
+        }
