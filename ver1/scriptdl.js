@@ -20,8 +20,7 @@ return response.json();
 .then(function(data){
   console.log(data);
   // Setting-up  varibles
-  mvname = data.title;
-  mvtime=data.runtime;
+  
   mvObj = data;
   showmvinfo();
 });
@@ -29,9 +28,9 @@ return response.json();
 }
 
 function showmvinfo(){
-    for (let prop in mvObj){
-       // console.log(mvObj[prop]);
-    }
+//for (let prop in mvObj){
+// console.log(mvObj[prop]);
+ //}
 
     main.innerHTML="";
     const movieEl = document.createElement('div');
