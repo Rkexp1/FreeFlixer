@@ -47,7 +47,7 @@ function showmvinfo(){
         <span><b>User Rating </b>: ${mvObj.vote_average} </span> <br> 
         <span><b>Runtime </b> : ${mvObj.runtime}Min </span> <br> 
         <span><b>Release Date</b>     : ${mvObj.release_date}</span><br > 
-        <span><b> Genres</b>  : ${mvObj.genres[0].name} , ${mvObj.genres[1].name} , ${mvObj.genres[2].name}</span> <br>
+        <span><strong> Genre</strong>  : ${mvObj.genres[0].name} </span> <br>
         <h4>OVERVEIW</h4> 
         <span>${mvObj.overview}</span>
         <br> <br> 
